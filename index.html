@@ -2,12 +2,27 @@
 <head>
     <title>Hui-Pfui-Katzenklo</title>
     <link rel="stylesheet" href="style.css">
-<head/>
+</head>
 <main>
      <h1>
 Willkommen auf der Website des Hui-Pfui-Katzenklos
  </h1> 
+    
+<style>
+.home {
+   display:flex;
+}
+    
+    .kontakt{
+    display:none;
+        }
 
+    .Kundenmeinungen {
+display:none;
+    }
+
+    
+</style>
    .content {
     display: flex;
 }
@@ -23,9 +38,9 @@ Willkommen auf der Website des Hui-Pfui-Katzenklos
   <body>
     <div class="navi">
       <div class="buttoncontainer "> 
-     <button>Home</button>
-     <button>Kontakt</button>
-    <button>Bestellformular</button>
+     <button onklick="showHome()">Home</button>
+     <button onklick="showKontakt()">Kontakt</button>
+    <button onklick="showKundenmeinungen()">Kundenmeinungen</button>
       </div>
     </div>
     <div class="content">
@@ -48,13 +63,18 @@ der Sprungfedern müssen Sie nicht einmal reingreifen. Die Katzenklo Reinigung w
         </section>
         
         <section class="Kontakt">
-            
+            Wir sind zu erreichen unter:
+
+            00917732012
+            24th Road,Wahal,Mumbai
+            400001,India
+            Ranjeet Singh 
 
 
             
         </section>
 
-        <section class="bestellformular">
+        <section class="Kundenmeinungen">
             
         </section>
 
@@ -62,9 +82,41 @@ der Sprungfedern müssen Sie nicht einmal reingreifen. Die Katzenklo Reinigung w
       
     </div>
         <script>
+            
 var confirm = "Unsere Qualitäten sind umwerfend! Wir produzieren in Indien und spendieren unseren Arbeitern jeden Tag leckeren Chai!"
             alert(confirm)
         </script>
+
+      <script>
+function showHome() {
+var Homesection =document.queryselector (."home");
+            Homesection.style.display="flex";
+            var KontaktSection=document.queryselector (".Kontakt");
+            KontaktSection.style.display="none";
+            var KundenmeinungSection=document.queryselector (".Kundenmeinung");
+            Kundenmeinungsection.style.display="none";
+   
+}
+        function showKontakt(){
+ var Homesection =document.queryselector (."home");
+            Homesection.style.display="none";
+            var KontaktSection=document.queryselector (".Kontakt");
+            KontaktSection.style.display="flex";
+            var KundenmeinungSection=document.queryselector (".Kundenmeinung");
+            Kundenmeinungsection.style.display="none";
+            
+}
+        
+
+          function showKundenmeinungen(){
+var Homesection =document.queryselector (."home");
+            Homesection.style.display="none";
+            var KontaktSection=document.queryselector (".Kontakt");
+            KontaktSection.style.display="none";
+            var KundenmeinungSection=document.queryselector (".Kundenmeinung");
+            Kundenmeinungsection.style.display="flex";
+          }
+      </script>
   </body>
 
 </html>
