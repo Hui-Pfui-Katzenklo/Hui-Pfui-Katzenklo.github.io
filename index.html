@@ -120,12 +120,22 @@ Ich empfehle jedem, der eine Katze hat, dieses Produkt zu kaufen:)
 function showHome() {
 var Homesection =document.queryselector (."home");
             Homesection.style="display:flex";
+    var KontaktSection=document.queryselector (".Kontakt");
+            KontaktSection.style="display=:none";
+            var KundenmeinungSection=document.queryselector (".Kundenmeinung");
+            Kundenmeinungsection.style="display:none";
+
             
    
 }
         function showKontakt(){
  var Homesection =document.queryselector (."home");
             Homesection.style="display:none";
+            var KontaktSection=document.queryselector (".Kontakt");
+            KontaktSection.style="display:flex";
+            var KundenmeinungSection=document.queryselector (".Kundenmeinung");
+            Kundenmeinungsection.style="display:none";  
+
             
             
 }
@@ -134,7 +144,12 @@ var Homesection =document.queryselector (."home");
           function showKundenmeinungen(){
 var Homesection =document.queryselector (."home");
             Homesection.style="display:none";
-           
+var KontaktSection=document.queryselector (".Kontakt");
+            KontaktSection.style="display:none";
+            var KundenmeinungSection=document.queryselector (".Kundenmeinung");
+            Kundenmeinungsection.style="display:flex";
+
+              
       </script>
   </body>
 
