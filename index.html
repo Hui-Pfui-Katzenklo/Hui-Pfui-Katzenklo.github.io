@@ -30,7 +30,7 @@ display: none;
   <body>
     <div class="navi">
       <div class="buttoncontainer"> 
-     <button onclick="showHome()">Home</button>
+     <button onclick="ZeigeMeldung">Home</button>
      <button onclick="showKontakt()">Kontakt</button>
     <button onclick="showKundenmeinungen()">Kundenmeinungen</button>
       </div>
@@ -38,6 +38,9 @@ display: none;
     <div class="content">
 
        div class="leftcontainer">
+        
+        <section class="home">
+
                 <h1>
 Willkommen auf der Website des Hui-Pfui-Katzenklos
  </h1> 
@@ -101,56 +104,27 @@ Ich empfehle jedem, der eine Katze hat, dieses Produkt zu kaufen:)
             
         </section>
 
-        <script>
-            var confirm="Unsere Qualitäten sind umwerfend!Wir produzieren in Indien und spendieren unseren Arbeitern jeden Tag leckeren Chai!
-                alert(confirm)
-                </script>
+       <script>
+      function ZeigeMeldung() {
+alert("herzlich wilkommen beim Hui-Pfui-Katzenklo");
 
-        
-      
+
+
+      }
  
         
 
-      <script>
-function showHome() {
-var Homesection =document.queryselector (."home");
-            Homesection.style="display:flex";
-    var KontaktSection=document.queryselector (".Kontakt");
-            KontaktSection.style="display=:none";
-            var KundenmeinungSection=document.queryselector (".Kundenmeinung");
-            Kundenmeinungsection.style="display:none";
-
-            
-   
-}
-        function showKontakt(){
- var Homesection =document.queryselector (."home");
-            Homesection.style="display:none";
-            var KontaktSection=document.queryselector (".Kontakt");
-            KontaktSection.style="display:flex";
-            var KundenmeinungSection=document.queryselector (".Kundenmeinung");
-            Kundenmeinungsection.style="display:none";  
-}
-        
-
-          function showKundenmeinungen(){
-var Homesection =document.queryselector (."home");
-            Homesection.style="display:none";
-var KontaktSection=document.queryselector (".Kontakt");
-            KontaktSection.style="display:none";
-            var KundenmeinungSection=document.queryselector (".Kundenmeinung");
-            Kundenmeinungsection.style="display:flex";
-          }
+  
                
 
            
              
-<section class="home">
+
 
     
 
                 
-<img src="bilder/Product.png"width="400"height="400">
+
 
     
            
