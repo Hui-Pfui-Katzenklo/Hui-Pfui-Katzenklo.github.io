@@ -8,15 +8,14 @@
      
     
 <style>
-.home {
+.Home {
    display: flex;
 }
     
-    .kontakt{
+    .Kontakt{
     display: none;
         }
-
-    .kundenmeinungen {
+    .Kundenmeinungen {
 display: none;
     }
 
@@ -30,9 +29,9 @@ display: none;
   <body>
     <div class="navi">
       <div class="buttoncontainer"> 
-     <button onclick="showhome()">home</button>
-     <button onclick="showkontakt()">kontakt</button>
-    <button onclick="showkundenmeinungen()">kundenmeinungen</button>
+     <button onclick="showHome()">Home</button>
+     <button onclick="showKontakt()">Kontakt</button>
+    <button onclick="showKundenmeinungen()">Kundenmeinungen</button>
       </div>
     </div>
     <div class="content">
@@ -104,46 +103,41 @@ Ich empfehle jedem, der eine Katze hat, dieses Produkt zu kaufen:)
             
         </section>
 
-       <script>
-     <script>
-            var confirm="Unsere Qualitäten sind umwerfend!Wir produzieren in Indien und spendieren unseren Arbeitern jeden Tag leckeren Chai!
-                alert(confirm)
-                </script>
-
+       
         
       
  
         
 
       <script>
-function showhome() {
-var homesection =document.queryselector (."home");
-            homesection.style="display:flex";
-    var kontaktSection=document.queryselector (".kontakt");
-            kontaktSection.style="display=:none";
-            var kundenmeinungSection=document.queryselector (".kundenmeinung");
-            kundenmeinungsection.style="display:none";
+function showHome() {
+var HomeSection =document.queryselector(."home");
+            Homesection.style.display="flex";
+    var KontaktSection=document.queryselector(".kontakt");
+            KontaktSection.style=.display="none";
+            var KundenmeinungenSection=document.queryselector(".kundenmeinung");
+            Kundenmeinungensection.style.display="none";
 
             
    
 }
         function showKontakt(){
- var homesection =document.queryselector (."home");
-            homesection.style="display:none";
-            var kontaktSection=document.queryselector (".kontakt");
-            kontaktSection.style="display:flex";
-            var kundenmeinungSection=document.queryselector (".kundenmeinung");
-            kundenmeinungsection.style="display:none";  
+ var HomeSection=document.queryselector(."home");
+            Homesection.style.display="none";
+            var KontaktSection=document.queryselector(".kontakt");
+            KontaktSection.style.display="flex";
+            var KundenmeinungenSection=document.queryselector(".kundenmeinung");
+           KundenmeinungenSection.style.display="none";  
 }
         
 
-          function showkundenmeinungen(){
-var homesection =document.queryselector (."home");
-            homesection.style="display:none";
-var kontaktSection=document.queryselector (".kontakt");
-            kontaktSection.style="display:none";
-            var kundenmeinungSection=document.queryselector (".kundenmeinung");
-            kundenmeinungsection.style="display:flex"; 
+          function showKundenmeinungen(){
+var HomeSection =document.queryselector (."home");
+            homesection.style.display="none";
+var KontaktSection=document.queryselector (".kontakt");
+            KontaktSection.style.display="none";
+            var KundenmeinungenSection=document.queryselector (".kundenmeinungen");
+            Kundenmeinungsection.style.display="flex"; 
 
 
 
